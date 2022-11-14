@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>北米戦線ver1.10</title>
+<title>北米戦線ver1.11</title>
 </head>
 <body>
 
@@ -198,7 +198,7 @@ ChanceMin = 2;//師団が選択肢に出てくる値の最小値
 ChanceMax = 10;//師団が選択肢に出てくる値の最大値
 DefMisc = 2;//防衛時の戦力ボーナス
 Hokyuu = new Array(5,20);//初期補給物資
-HokyuuPlusBon = new Array(0,0.4);//補給ボーナス
+HokyuuPlusBon = new Array(0.4,0);//補給ボーナス
 HojuMisc = 6;//補充に必要な補給値
 HojuEffMisc = 2;//一度の補充で上昇する戦力値
 
@@ -771,8 +771,8 @@ function Scenario00() {
 	for (HenA=1;HenA<=AreaSousuu;HenA++) {
 		AreaData[HenA] = new Array(8);
 		AreaData[HenA][0] = 0; //占領国　０北軍、１南軍
-		AreaData[HenA][1] = 0; //最大生産力
-		AreaData[HenA][2] = 0; //現在生産力
+		AreaData[HenA][1] = 0; //最大生産力(没データ)
+		AreaData[HenA][2] = 0; //現在生産力(没データ)
 		AreaData[HenA][3] = 999; //第1師団
 		AreaData[HenA][4] = 999; //第2師団
 		AreaData[HenA][5] = 999; //第3師団
@@ -1507,19 +1507,19 @@ function SeiatuKouka() {
 	SeiatuHenA = new Array();
 	//部隊の存在を把握
 	for (SeiatuHenB=1;SeiatuHenB<=AreaSousuu;SeiatuHenB++) {
-		SeiatuHenA[SeiatuHenB] = new Array(0,0);
+		SeiatuHenA[SeiatuHenB] = new Array(0,0);//変数設定
 		if (AreaData[SeiatuHenB][3]!=999) {
-			SeiatuHenA[SeiatuHenB][AreaData[SeiatuHenB][0]] = 2;
+			SeiatuHenA[SeiatuHenB][AreaData[SeiatuHenB][0]] = 2;//エリアに部隊がいる場合 SeiatuHenA[エリアID][陣営]=2となる
 		}
 	}
 	//隣接州を把握
-	for (SeiatuHenD=0;SeiatuHenD<=1;SeiatuHenD++) {
+	for (SeiatuHenD=0;SeiatuHenD<=1;SeiatuHenD++) {//陣営ごと判定
 		for (SeiatuHenB=1;SeiatuHenB<=AreaSousuu;SeiatuHenB++) {
-			if (SeiatuHenA[SeiatuHenB][SeiatuHenD]==2) {
+			if (SeiatuHenA[SeiatuHenB][SeiatuHenD]==2) {//エリアに陣営の部隊がいる場合
 				for (SeiatuHenC=0;SeiatuHenC<=AreaSousuu;SeiatuHenC++) {
-					if (AreaSetuzoku[SeiatuHenB][SeiatuHenC]==1) {
+					if (AreaSetuzoku[SeiatuHenB][SeiatuHenC]==1) {//隣接確認
 						if (SeiatuHenA[SeiatuHenC][SeiatuHenD]!=2) {
-							SeiatuHenA[SeiatuHenC][SeiatuHenD]=1;
+							SeiatuHenA[SeiatuHenC][SeiatuHenD]=1;//隣接エリアに部隊がいる場合 SeiatuHenA[エリアID][陣営]=1となる
 						}
 					}
 				}
