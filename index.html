@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>北米戦線ver1.11</title>
+<title>北米戦線ver2</title>
 </head>
 <body>
 
@@ -49,109 +49,21 @@
 <img id="Area_41" src="Blue1.png" style="position:absolute; top:250px;left:80px;" width=22 height=14 onMouseover="Area(41);" ondblclick="Area(41);Kettei();">
 <img id="Area_42" src="Blue1.png" style="position:absolute; top:170px;left:100px;" width=22 height=14 onMouseover="Area(42);" ondblclick="Area(42);Kettei();">
 
-<img id="B01" src="BotannOn.png" style="position:absolute; top:123px;left:900px;" width=20 height=20 onClick="Botann(1);">
-<img id="B02" src="Botann.png" style="position:absolute; top:304px;left:900px;" width=20 height=20 onClick="Botann(2);">
-
 <img id="B11" src="BoxOn.png" style="position:absolute; top:333px;left:902px;" width=14 height=14 onClick="BoxSel(1);">
 <img id="B12" src="Box.png" style="position:absolute; top:358px;left:902px;" width=14 height=14 onClick="BoxSel(2);">
 <img id="B13" src="Box.png" style="position:absolute; top:384px;left:902px;" width=14 height=14 onClick="BoxSel(3);">
 <img id="B14" src="Box.png" style="position:absolute; top:410px;left:902px;" width=14 height=14 onClick="BoxSel(4);">
 <img id="B15" src="Box.png" style="position:absolute; top:436px;left:902px;" width=14 height=14 onClick="BoxSel(5);">
 
-<table border=0 style="position:absolute; top:120px;left:925px;border-collapse:collapse;"><form name="For01"><tr><td><select name="S01" onChange="For01Sel01()">
-	<option value="1">メイン州
-	<option value="2">マサチューセッツ州
-	<option value="3">ニューヨーク州
-	<option value="4">ペンシルバニア州
-	<option value="5">ニュージャージー州
-	<option value="6">ヴァージニア州
-	<option value="7">ウェストバージニア州
-	<option value="8">オハイオ州
-	<option value="9">インディアナ州
-	<option value="10">ミシガン州
-	<option value="11">ケンタッキー州
-	<option value="12">テネシー州
-	<option value="13">ノースカロライナ州
-	<option value="14">サウスカロライナ州
-	<option value="15">ジョージア州
-	<option value="16">アラバマ州
-	<option value="17">フロリダ州
-	<option value="18">ミシシッピ州
-	<option value="19">ルイジアナ州
-	<option value="20">アーカンソー州
-	<option value="21">ミズーリ州
-	<option value="22">イリノイ州
-	<option value="23">ウィスコンシン州
-	<option value="24">ミネソタ州
-	<option value="25">アイオア州
-	<option value="26">ノースダコタ州
-	<option value="27">サウスダコタ州
-	<option value="28">ネブラスカ州
-	<option value="29">カンザス州
-	<option value="30">オクラホマ州
-	<option value="31">テキサス州
-	<option value="32">ニューメキシコ州
-	<option value="33">アリゾナ州
-	<option value="34">コロラド州
-	<option value="35">ユタ州
-	<option value="36">ワイオミング州
-	<option value="37">モンタナ州
-	<option value="38">アイホダ州
-	<option value="39">ネバダ州
-	<option value="40">カリフォルニア
-	<option value="41">オレゴン州
-	<option value="42">ワシントン州
-</select></td></tr>
+<table border=0 style="position:absolute; top:120px;left:925px;border-collapse:collapse;"><form name="For01">
+<tr><td><input name="Tex05" type="text" size="17" value="0"></td></tr>
 <tr><td><input name="Tex00" type="text" size="17" value="0"></td><td><input name="Tex10" type="text" size="2" value="0"></td></tr>
 <tr><td><input name="Tex01" type="text" size="17" value="0"></td><td><input name="Tex11" type="text" size="2" value="0"></td></tr>
 <tr><td><input name="Tex02" type="text" size="17" value="0"></td><td><input name="Tex12" type="text" size="2" value="0"></td></tr>
 <tr><td><input name="Tex03" type="text" size="17" value="0"></td><td><input name="Tex13" type="text" size="2" value="0"></td></tr>
 <tr><td><input name="Tex04" type="text" size="17" value="0"></td><td><input name="Tex14" type="text" size="2" value="0"></td></tr>
 <tr><td>　</td></tr>
-<tr><td><select name="S02" onChange="For01Sel02()">
-	<option value="1">メイン州
-	<option value="2">マサチューセッツ州
-	<option value="3">ニューヨーク州
-	<option value="4">ペンシルバニア州
-	<option value="5">ニュージャージー州
-	<option value="6">ヴァージニア州
-	<option value="7">ウェストバージニア州
-	<option value="8">オハイオ州
-	<option value="9">インディアナ州
-	<option value="10">ミシガン州
-	<option value="11">ケンタッキー州
-	<option value="12">テネシー州
-	<option value="13">ノースカロライナ州
-	<option value="14">サウスカロライナ州
-	<option value="15">ジョージア州
-	<option value="16">アラバマ州
-	<option value="17">フロリダ州
-	<option value="18">ミシシッピ州
-	<option value="19">ルイジアナ州
-	<option value="20">アーカンソー州
-	<option value="21">ミズーリ州
-	<option value="22">イリノイ州
-	<option value="23">ウィスコンシン州
-	<option value="24">ミネソタ州
-	<option value="25">アイオア州
-	<option value="26">ノースダコタ州
-	<option value="27">サウスダコタ州
-	<option value="28">ネブラスカ州
-	<option value="29">カンザス州
-	<option value="30">オクラホマ州
-	<option value="31">テキサス州
-	<option value="32">ニューメキシコ州
-	<option value="33">アリゾナ州
-	<option value="34">コロラド州
-	<option value="35">ユタ州
-	<option value="36">ワイオミング州
-	<option value="37">モンタナ州
-	<option value="38">アイホダ州
-	<option value="39">ネバダ州
-	<option value="40">カリフォルニア州
-	<option value="41">オレゴン州
-	<option value="42">ワシントン州
-</select></td></tr>
+<tr><td><input name="Tex105" type="text" size="17" value="0"></td></tr>
 <tr><td><input name="Tex100" type="text" size="17" value="0"></td><td><input name="Tex110" type="text" size="2" value="0"></td></tr>
 <tr><td><input name="Tex101" type="text" size="17" value="0"></td><td><input name="Tex111" type="text" size="2" value="0"></td></tr>
 <tr><td><input name="Tex102" type="text" size="17" value="0"></td><td><input name="Tex112" type="text" size="2" value="0"></td></tr>
@@ -172,6 +84,11 @@
 <tr><td>戦力値</td></tr>
 <tr><td><input name="Tex00" type="text" size="12" value="0"></td></tr></form></table>
 
+<table border=0 style="position:absolute; top:70px;left:0px;border-collapse:collapse;"><form name="For04"><tr><td><select name="S00" onChange="For00Sel00()">
+	<option>第二次アメリカ内戦(1936)
+	<option>枢軸軍上陸(1945)
+</select></form></td></tr></form></table>
+
 <table border=0 style="position:absolute; top:540px;left:920px;border-collapse:collapse;">
 <tr><td><a href="https://devum765.github.io/javascript-game07explan/">ゲーム説明</a></td></tr></table>
 
@@ -190,6 +107,7 @@
 <!--【命令決定】-->
 <!--【コマンド】-->
 <!--【ターン更新】-->
+<!--【シナリオ】-->
 <!--【ショートカットキー】-->
 
 <!--【Misc】-->
@@ -203,6 +121,8 @@ HojuMisc = 6;//補充に必要な補給値
 HojuEffMisc = 2;//一度の補充で上昇する戦力値
 
 Game = 0;
+Scenario = 0;
+ColorShitei = "Red";
 <!--【マップ接続】-->
 
 AreaSousuu = 42;
@@ -319,6 +239,51 @@ for(HenA=1;HenA<=AreaSousuu;HenA++) {
 	}
 }
 
+AreaName = new Array();
+
+AreaName[ 1] = "メイン州";
+AreaName[ 2] = "マサチューセッツ州";
+AreaName[ 3] = "ニューヨーク州";
+AreaName[ 4] = "ペンシルバニア州";
+AreaName[ 5] = "ニュージャージー州";
+AreaName[ 6] = "ヴァージニア州";
+AreaName[ 7] = "ウェストバージニア州";
+AreaName[ 8] = "オハイオ州";
+AreaName[ 9] = "インディアナ州";
+AreaName[10] = "ミシガン州";
+AreaName[11] = "ケンタッキー州";
+AreaName[12] = "テネシー州";
+AreaName[13] = "ノースカロライナ州";
+AreaName[14] = "サウスカロライナ州";
+AreaName[15] = "ジョージア州";
+AreaName[16] = "アラバマ州";
+AreaName[17] = "フロリダ州";
+AreaName[18] = "ミシシッピ州";
+AreaName[19] = "ルイジアナ州";
+AreaName[20] = "アーカンソー州";
+AreaName[21] = "ミズーリ州";
+AreaName[22] = "イリノイ州";
+AreaName[23] = "ウィスコンシン州";
+AreaName[24] = "ミネソタ州";
+AreaName[25] = "アイオア州";
+AreaName[26] = "ノースダコタ州";
+AreaName[27] = "サウスダコタ州";
+AreaName[28] = "ネブラスカ州";
+AreaName[29] = "カンザス州";
+AreaName[30] = "オクラホマ州";
+AreaName[31] = "テキサス州";
+AreaName[32] = "ニューメキシコ州";
+AreaName[33] = "アリゾナ州";
+AreaName[34] = "コロラド州";
+AreaName[35] = "ユタ州";
+AreaName[36] = "ワイオミング州";
+AreaName[37] = "モンタナ州";
+AreaName[38] = "アイホダ州";
+AreaName[39] = "ネバダ州";
+AreaName[40] = "カリフォルニア州";
+AreaName[41] = "オレゴン州";
+AreaName[42] = "ワシントン州";
+
 <!--【エリア選択】-->
 
 function MapShidannData() {
@@ -423,6 +388,7 @@ function MapShidannData() {
 		document.For01.Tex04.defaultValue = "×";
 		document.For01.Tex14.defaultValue = "0";
 	}
+	document.For01.Tex05.defaultValue = AreaName[SenntakuArea01];
 	//SenntakuArea02
 	if (AreaData[SenntakuArea02][3]!=999) {
 		document.For01.Tex100.defaultValue = Division[AreaData[SenntakuArea02][0]][AreaData[SenntakuArea02][3]][0];
@@ -504,65 +470,18 @@ function MapShidannData() {
 		document.For01.Tex104.defaultValue = "×";
 		document.For01.Tex114.defaultValue = "0";
 	}
+	document.For01.Tex105.defaultValue = AreaName[SenntakuArea02];
 }
 
-AreaSel = 1;
+AreaSel = 2;
 SenntakuArea01 = 1;
 SenntakuArea02 = 1;
 
 function Area(AreaNum) {
 	if (ComHen!=2 && ComHen!=3 && ComHen!=4) {
-		HenA = AreaNum-1;
-		switch (AreaSel) {
-			case 1:
-				document.For01.S01.selectedIndex=HenA;
-				SenntakuArea01 = AreaNum;
-			break;
-			case 2:
-				document.For01.S02.selectedIndex=HenA;
-				SenntakuArea02 = AreaNum;
-			break;
-		}
+		SenntakuArea02 = AreaNum;
 		MapHyouji();
 		MapShidannData();
-	}
-}
-
-function For01Sel01() {
-	if (ComHen==0) {
-		HenA = document.For01.S01.selectedIndex;
-		SenntakuArea01 = HenA+1;
-		MapHyouji();
-	}
-	if (ComHen!=0) {
-		HenA = SenntakuArea01-1;
-		document.For01.S01.selectedIndex  = HenA;
-	}
-}
-
-function For01Sel02() {
-	if (ComHen!=2 && ComHen!=3 && ComHen!=4) {
-		HenA = document.For01.S02.selectedIndex;
-		SenntakuArea02 = HenA+1;
-		MapHyouji()
-	}
-	if (ComHen==2 || ComHen==3 || ComHen==4) {
-		HenA = SenntakuArea02-1;
-		document.For01.S02.selectedIndex  = HenA;
-	}
-}
-
-function Botann(HenA) {
-	if (ComHen==0) {
-		AreaSel = HenA;
-		if (AreaSel==1) {
-			document.getElementById("B01").src="BotannOn.png";
-			document.getElementById("B02").src="Botann.png";
-		}
-		if (AreaSel==2) {
-			document.getElementById("B01").src="Botann.png";
-			document.getElementById("B02").src="BotannOn.png";
-		}
 	}
 }
 
@@ -623,7 +542,7 @@ DivSousuu = 99;
 
 <!--【マップ表示】-->
 
-ComHen = 0;
+ComHen = 1;
 
 function MapHyouji() {
 	for (HenA=1;HenA<=AreaSousuu;HenA++) {
@@ -694,20 +613,20 @@ function MapHyouji() {
 			}
 		}
 		if (AreaData[HenA][0]==1) {//赤軍
-			document.getElementById("Area_"+[HenA]).src="Red1.png";
-			if (HenA==SenntakuArea01 || HenA==SenntakuArea02) { document.getElementById("Area_"+[HenA]).src="Red1Sen.png"; }
+			document.getElementById("Area_"+[HenA]).src=ColorShitei+"1.png";
+			if (HenA==SenntakuArea01 || HenA==SenntakuArea02) { document.getElementById("Area_"+[HenA]).src=ColorShitei+"1Sen.png"; }
 			if (AreaData[HenA][8]!=0) {
-				document.getElementById("Area_"+[HenA]).src="Red2.png";
-				if (HenA==SenntakuArea01 || HenA==SenntakuArea02) { document.getElementById("Area_"+[HenA]).src="Red2Sen.png"; }
+				document.getElementById("Area_"+[HenA]).src=ColorShitei+"2.png";
+				if (HenA==SenntakuArea01 || HenA==SenntakuArea02) { document.getElementById("Area_"+[HenA]).src=ColorShitei+"2Sen.png"; }
 				if (ComHen==0) {
 					for (HenD=1;HenD<=4;HenD++) {
 						if (Division[TurnJinnei][CommandAtari[HenD]][4]==HenA) {
-							document.getElementById("Area_"+[HenA]).src="Red2A.png";
+							document.getElementById("Area_"+[HenA]).src=ColorShitei+"2A.png";
 						}
 					}
 				}
 				if ((ComHen==1 || ComHen==4)&& Division[TurnJinnei][SenntakuShidann][4]==HenA) {
-					document.getElementById("Area_"+[HenA]).src="Red2A.png";
+					document.getElementById("Area_"+[HenA]).src=ColorShitei+"2A.png";
 				}
 				HenC = 0;
 				for (HenB=3;HenB<=7;HenB++) {
@@ -716,45 +635,45 @@ function MapHyouji() {
 					}
 				}
 				if (HenC>=5) {
-					document.getElementById("Area_"+[HenA]).src="Red3.png";
-					if (HenA==SenntakuArea01 || HenA==SenntakuArea02) { document.getElementById("Area_"+[HenA]).src="Red3Sen.png"; }
+					document.getElementById("Area_"+[HenA]).src=ColorShitei+"3.png";
+					if (HenA==SenntakuArea01 || HenA==SenntakuArea02) { document.getElementById("Area_"+[HenA]).src=ColorShitei+"3Sen.png"; }
 					if (ComHen==0) {
 						for (HenD=1;HenD<=4;HenD++) {
 							if (Division[TurnJinnei][CommandAtari[HenD]][4]==HenA) {
-								document.getElementById("Area_"+[HenA]).src="Red3A.png";
+								document.getElementById("Area_"+[HenA]).src=ColorShitei+"3A.png";
 							}
 						}
 					}
 					if ((ComHen==1 || ComHen==4)&& Division[TurnJinnei][SenntakuShidann][4]==HenA) {
-						document.getElementById("Area_"+[HenA]).src="Red3A.png";
+						document.getElementById("Area_"+[HenA]).src=ColorShitei+"3A.png";
 					}
 				}
 				if (HenC>=10) {
-					document.getElementById("Area_"+[HenA]).src="Red4.png";
-					if (HenA==SenntakuArea01 || HenA==SenntakuArea02) { document.getElementById("Area_"+[HenA]).src="Red4Sen.png"; }
+					document.getElementById("Area_"+[HenA]).src=ColorShitei+"4.png";
+					if (HenA==SenntakuArea01 || HenA==SenntakuArea02) { document.getElementById("Area_"+[HenA]).src=ColorShitei+"4Sen.png"; }
 					if (ComHen==0) {
 						for (HenD=1;HenD<=4;HenD++) {
 							if (Division[TurnJinnei][CommandAtari[HenD]][4]==HenA) {
-								document.getElementById("Area_"+[HenA]).src="Red4A.png";
+								document.getElementById("Area_"+[HenA]).src=ColorShitei+"4A.png";
 							}
 						}
 					}
 					if ((ComHen==1 || ComHen==4)&& Division[TurnJinnei][SenntakuShidann][4]==HenA) {
-						document.getElementById("Area_"+[HenA]).src="Red4A.png";
+						document.getElementById("Area_"+[HenA]).src=ColorShitei+"4A.png";
 					}
 				}
 				if (HenC>=20) {
-					document.getElementById("Area_"+[HenA]).src="Red5.png";
-					if (HenA==SenntakuArea01 || HenA==SenntakuArea02) { document.getElementById("Area_"+[HenA]).src="Red5Sen.png"; }
+					document.getElementById("Area_"+[HenA]).src=ColorShitei+"5.png";
+					if (HenA==SenntakuArea01 || HenA==SenntakuArea02) { document.getElementById("Area_"+[HenA]).src=ColorShitei+"5Sen.png"; }
 					if (ComHen==0) {
 						for (HenD=1;HenD<=4;HenD++) {
 							if (Division[TurnJinnei][CommandAtari[HenD]][4]==HenA) {
-								document.getElementById("Area_"+[HenA]).src="Red5A.png";
+								document.getElementById("Area_"+[HenA]).src=ColorShitei+"5A.png";
 							}
 						}
 					}
 					if ((ComHen==1 || ComHen==4)&& Division[TurnJinnei][SenntakuShidann][4]==HenA) {
-						document.getElementById("Area_"+[HenA]).src="Red5A.png";
+						document.getElementById("Area_"+[HenA]).src=ColorShitei+"5A.png";
 					}
 				}
 			}
@@ -791,7 +710,7 @@ function Scenario00() {
 	AreaData[22][0] = 1;
 	AreaData[23][0] = 1;
 
-	//０師団名、１存在(０存在せず、１存在する)、２戦力値、３最大戦力、４座標、５補給(戦車4、歩兵・予備役2、民兵1)、６砲撃(0不可、1以上消費物資)、７機動(0不可、1以上可能回数)
+	//０師団名、１存在(０存在せず、１存在する)、２戦力値、３最大戦力、４座標、５補給(戦車2、歩兵・予備役・民兵1)、６砲撃(0不可、1以上消費物資)、７機動(0不可、1以上可能回数)
 	for (HenA=0;HenA<=DivSousuu;HenA++) {
 		Division[0][HenA] = new Array();
 		Division[0][HenA][0] = 0;
@@ -876,11 +795,157 @@ function Scenario00() {
 	Division[1][18] = new Array("予備役第14部隊",1,4,4,23,1,0,1);
 	Division[1][19] = new Array("第4民兵隊",1,3,3,23,1,0,0);
 
+	Aname = "青軍";
+	Bname = "赤軍";
+
+	KonnkyotiArea = new Array();
+	KonnkyotiArea[0] = new Array(3,42);
+	KonnkyotiArea[1] = new Array(17,22);
+
+	ColorShitei = "Red";
+	HokyuuPlusBon = new Array(0.4,0);//補給ボーナス
+
+	MapShidannData()
+
+}
+
+function Scenario01() {
+
+	AreaData = new Array();
+
+	for (HenA=1;HenA<=AreaSousuu;HenA++) {
+		AreaData[HenA] = new Array(8);
+		AreaData[HenA][0] = 0; //占領国　０連合軍、１枢軸軍
+		AreaData[HenA][1] = 0; //最大生産力
+		AreaData[HenA][2] = 0; //現在生産力
+		AreaData[HenA][3] = 999; //第1師団
+		AreaData[HenA][4] = 999; //第2師団
+		AreaData[HenA][5] = 999; //第3師団
+		AreaData[HenA][6] = 999; //第4師団
+		AreaData[HenA][7] = 999; //第5師団
+		AreaData[HenA][8] = 0; //駐留師団数
+	}
+
+	AreaData[13][0] = 1;
+	AreaData[14][0] = 1;
+	AreaData[15][0] = 1;
+	AreaData[40][0] = 1;
+
+	//０師団名、１存在(０存在せず、１存在する)、２戦力値、３最大戦力、４座標、５補給(戦車4、歩兵・予備役2、民兵1)、６砲撃(0不可、1以上消費物資)、７機動(0不可、1以上可能回数)
+	for (HenA=0;HenA<=DivSousuu;HenA++) {
+		Division[0][HenA] = new Array();
+		Division[0][HenA][0] = 0;
+		Division[0][HenA][1] = 0;
+		Division[0][HenA][2] = 0;
+		Division[0][HenA][3] = 0;
+		Division[0][HenA][4] = 0;
+		Division[0][HenA][5] = 0;
+		Division[0][HenA][6] = 0;
+		Division[0][HenA][7] = 0;
+		Division[1][HenA] = new Array();
+		Division[1][HenA][0] = 0;
+		Division[1][HenA][1] = 0;
+		Division[1][HenA][2] = 0;
+		Division[1][HenA][3] = 0;
+		Division[1][HenA][4] = 0;
+		Division[1][HenA][5] = 0;
+		Division[1][HenA][6] = 0;
+		Division[0][HenA][7] = 0;
+	}
+
+	//アメリカ軍
+	//ニューヨーク
+	Division[0][ 0] = new Array("米国機甲第1軍集団",1,6,9,3,2,0,2);
+	Division[0][ 5] = new Array("米国歩兵第1軍集団",1,6,6,3,1,4,1);
+	Division[0][13] = new Array("ニューヨーク民兵隊",1,3,3,3,1,0,0);
+	//ヴァージニア
+	Division[0][ 1] = new Array("米国機甲第2軍集団",1,6,9,6,2,0,2);
+	Division[0][ 2] = new Array("米国機甲第3軍集団",1,6,9,6,2,0,2);
+	Division[0][ 6] = new Array("米国歩兵第2軍集団",1,6,6,6,1,4,1);
+	Division[0][ 7] = new Array("米国歩兵第3軍集団",1,6,6,6,1,4,1);
+	//ミズーリ
+	Division[0][ 3] = new Array("米国機甲第4軍集団",1,6,9,21,2,0,2);
+	Division[0][ 8] = new Array("米国歩兵第4軍集団",1,6,6,21,1,4,1);
+	//イリノイ
+	Division[0][ 9] = new Array("米国歩兵第5軍集団",1,6,6,22,1,4,1);
+	Division[0][14] = new Array("イリノイ民兵隊",1,3,3,22,1,0,0);
+	//ルイジアナ
+	Division[0][10] = new Array("米国歩兵第6軍集団",1,6,6,19,1,4,1);
+	//ニューメキシコ
+	Division[0][11] = new Array("米国歩兵第7軍集団",1,6,6,32,1,4,1);
+	Division[0][15] = new Array("ニューメキシコ民兵隊",1,3,3,32,1,0,0);
+	//ワシントン
+	Division[0][ 4] = new Array("米国機甲第5軍集団",1,6,9,42,2,0,2);
+	Division[0][16] = new Array("ワシントン民兵隊",1,3,3,42,1,0,0);
+	//ワイオミング
+	Division[0][12] = new Array("米国歩兵第8軍集団",1,6,6,36,1,4,1);
+	Division[0][17] = new Array("ワイオミング民兵隊",1,3,3,36,1,0,0);
+
+	//ドイツ軍
+	//ノースカロライナ
+	Division[1][ 0] = new Array("独軍機甲第1軍集団",1,9,9,13,2,0,2);
+	Division[1][ 1] = new Array("独軍機甲第2軍集団",1,9,9,13,2,0,2);
+	Division[1][ 5] = new Array("独軍歩兵第1軍集団",1,6,6,13,1,0,1);
+	//ジョージア
+	Division[1][ 2] = new Array("独軍機甲第3軍集団",1,9,9,15,2,0,2);
+	Division[1][ 3] = new Array("独軍機甲第4軍集団",1,9,9,15,2,0,2);
+	Division[1][ 6] = new Array("独軍歩兵第2軍集団",1,6,6,15,1,4,1);
+	Division[1][ 7] = new Array("独軍歩兵第3軍集団",1,6,6,15,1,4,1);
+	//サウスカロライナ
+	Division[1][ 4] = new Array("独軍機甲第4軍集団",1,9,9,14,2,0,2);
+	Division[1][ 8] = new Array("独軍歩兵第4軍集団",1,6,6,14,1,4,1);
+	Division[1][ 9] = new Array("伊軍歩兵第1軍集団",1,4,4,14,1,4,1);
+	Division[1][10] = new Array("伊軍歩兵第2軍集団",1,4,4,14,1,4,1);
+	//日本軍
+	//カリフォルニア
+	Division[1][11] = new Array("日帝軍歩兵第1軍集団",1,5,5,40,0,4,1);
+	Division[1][12] = new Array("日帝軍歩兵第2軍集団",1,5,5,40,0,4,1);
+	Division[1][13] = new Array("日帝軍歩兵第3軍集団",1,5,5,40,0,4,1);
+	Division[1][14] = new Array("日帝軍騎兵第1軍集団",1,4,4,40,1,0,2);
+
+	Aname = "米軍";
+	Bname = "枢軸";
+
+	KonnkyotiArea = new Array();
+	KonnkyotiArea[0] = new Array(3,42);
+	KonnkyotiArea[1] = new Array(17,40);
+
+	ColorShitei = "Black";
+	HokyuuPlusBon = new Array(0,0);//補給ボーナス
+
 	MapShidannData()
 
 }
 
 Scenario00()
+
+function For00Sel00() {
+	if (Turn==1) {
+		Scenario = document.For04.S00.selectedIndex;
+		switch (Scenario) {
+			case 0:
+				Scenario00()
+			break;
+			case 1:
+				Scenario01()
+			break;
+		}
+		DivChance = new Array();
+		DivChance[0] = new Array();
+		DivChance[1] = new Array();
+		for (HenB=0;HenB<=1;HenB++) {
+			for (HenA=0;HenA<=DivSousuu;HenA++) {
+				if (Division[HenB][HenA][1]!=0) {
+					DivChance[HenB][HenA] = ChanceMax;
+				}
+			}
+		}
+		HokyuuKeisann()
+		CommandSelect()
+		SennryokuKeisann()
+	}
+	document.For04.S00.selectedIndex  = Scenario;
+}
 
 <!--【命令決定】-->
 
@@ -899,7 +964,7 @@ for (HenB=0;HenB<=1;HenB++) {
 	}
 }
 
-function CommandSelect() {
+function CommandSelect() {//4部隊の中から1部隊を選択するverのコードを改変して使用しているため、不要なコードが多々存在する
 	//全優先値を計算
 	CommandSousuu = 0;
 	for (HenA=0;HenA<=DivSousuu;HenA++) {
@@ -937,20 +1002,30 @@ function CommandSelect() {
 	for (HenA=1;HenA<=4;HenA++) {
 		SenntakushiName[HenA] = Division[TurnJinnei][CommandAtari[HenA]][0]+"(補給"+Division[TurnJinnei][CommandAtari[HenA]][5]+")";
 	}
+	SenntakuShidann = CommandAtari[1];
+	KidouNum = Division[TurnJinnei][SenntakuShidann][7];
+	SenntakuArea01 = Division[TurnJinnei][SenntakuShidann][4];
+	SenntakushiName[1] = "１：行軍(攻撃)";
+	SenntakushiName[2] = "２：強攻";
+	SenntakushiName[3] = "３：砲撃";
+	SenntakushiName[4] = "４：補充";
+	SenntakushiName[5] = "Ｅ：待機";
 	document.For02.B01.value=SenntakushiName[1];
 	document.For02.B02.value=SenntakushiName[2];
 	document.For02.B03.value=SenntakushiName[3];
 	document.For02.B04.value=SenntakushiName[4];
-	SenntakushiName[5] = "待機命令";
 	document.For02.B05.value=SenntakushiName[5];
 	document.For02.Tex00.defaultValue = "補給点"+Hokyuu[TurnJinnei]+"+"+HokyuuPlus[TurnJinnei];
 	MapHyouji();
+	MapShidannData()
 }
 
 <!--【コマンド】-->
 
 SenntakuShidann = 999;
 TurnEndHen = 0;
+
+HokyuuSyouhizumi = 0;
 
 function Sen(HenA) {
 	if (Game==0) {
@@ -966,10 +1041,8 @@ function Sen(HenA) {
 						Hokyuu[TurnJinnei] -= Division[TurnJinnei][CommandAtari[HenA]][5];
 						SenntakuShidann = CommandAtari[HenA];
 						KidouNum = Division[TurnJinnei][SenntakuShidann][7];
-						Botann(1);
 						SenntakuArea01 = Division[TurnJinnei][SenntakuShidann][4];
 						Area(SenntakuArea01);
-						Botann(2);
 						ComHen = 1;
 						SenntakushiName[1] = "行軍(攻撃)";
 						SenntakushiName[2] = "強攻";
@@ -990,76 +1063,51 @@ function Sen(HenA) {
 			//１命令選択
 			case 1:
 				if (HenA==1) {//行軍(攻撃)
-					if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]==0) { alert("隣接していない州へは行軍できません"); }
-					if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]!=0) {
-						if (AreaData[SenntakuArea02][0]==[TurnJinnei]) {//行軍
-							if (AreaData[SenntakuArea02][7]!=999) { alert("1つの州には5部隊までしか駐留できません"); }
-							if (AreaData[SenntakuArea02][7]==999) {
-								Division[TurnJinnei][SenntakuShidann][4] = SenntakuArea02;
-								if (KidouNum==0) {
-									TurnEndHen = 1;
+					if (HokyuuSyouhizumi==0 && Hokyuu[TurnJinnei]<Division[TurnJinnei][CommandAtari[HenA]][5]) { alert("補給不足です"); }
+					if (HokyuuSyouhizumi!=0 || Hokyuu[TurnJinnei]>=Division[TurnJinnei][CommandAtari[HenA]][5]) {
+						if (HokyuuSyouhizumi==0) { Hokyuu[TurnJinnei] -= Division[TurnJinnei][CommandAtari[HenA]][5]; Hokyuu[TurnJinnei] = Math.round(Hokyuu[TurnJinnei]*10)/10; }
+						if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]==0) { alert("隣接していない州へは行軍できません"); }
+						if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]!=0) {
+							if (AreaData[SenntakuArea02][0]==[TurnJinnei]) {//行軍
+								if (AreaData[SenntakuArea02][7]!=999) { alert("1つの州には5部隊までしか駐留できません"); }
+								if (AreaData[SenntakuArea02][7]==999) {
+									Division[TurnJinnei][SenntakuShidann][4] = SenntakuArea02;
+									HokyuuSyouhizumi++;
+									if (KidouNum==0) {
+										TurnEndHen = 1;
+									}
+									if (KidouNum>=1) {
+										KidouNum--;
+										SenntakuArea01 = Division[TurnJinnei][SenntakuShidann][4];
+										SenntakushiName[5] = "Ｅ：行動終了";
+										document.For02.B05.value=SenntakushiName[5];
+									}
+									MapShidannData()
+									MapHyouji();
 								}
-								if (KidouNum>=1) {
-									KidouNum--;
-									SenntakuArea01 = Division[TurnJinnei][SenntakuShidann][4];
-									DainikouHenA = SenntakuArea01-1;
-									document.For01.S01.selectedIndex=DainikouHenA;
-									SenntakushiName[5] = "行動終了";
-									document.For02.B05.value=SenntakushiName[5];
-								}
-								MapShidannData()
-								MapHyouji();
 							}
-						}
-						if (AreaData[SenntakuArea02][0]!=[TurnJinnei]) {//攻撃・占領
-							HenB = 0;
-							if (AreaData[SenntakuArea02][3]==999) {//占領
-								HenB = 1;
-								Division[TurnJinnei][SenntakuShidann][4] = SenntakuArea02;
-								AreaData[SenntakuArea02][0] = TurnJinnei;
-								if (KidouNum==0) {
-									TurnEndHen = 1;
+							if (AreaData[SenntakuArea02][0]!=[TurnJinnei]) {//攻撃・占領
+								HenB = 0;
+								if (AreaData[SenntakuArea02][3]==999) {//占領
+									HenB = 1;
+									Division[TurnJinnei][SenntakuShidann][4] = SenntakuArea02;
+									AreaData[SenntakuArea02][0] = TurnJinnei;
+									HokyuuSyouhizumi++;
+									if (KidouNum==0) {
+										TurnEndHen = 1;
+									}
+									if (KidouNum>=1) {
+										KidouNum--;
+										SenntakuArea01 = Division[TurnJinnei][SenntakuShidann][4];
+										SenntakushiName[5] = "Ｅ：行動終了";
+										document.For02.B05.value=SenntakushiName[5];
+									}
+									MapShidannData();
+									MapHyouji();
 								}
-								if (KidouNum>=1) {
-									KidouNum--;
-									SenntakuArea01 = Division[TurnJinnei][SenntakuShidann][4];
-									DainikouHenA = SenntakuArea01-1;
-									document.For01.S01.selectedIndex=DainikouHenA;
-									SenntakushiName[5] = "行動終了";
-									document.For02.B05.value=SenntakushiName[5];
-								}
-								MapShidannData();
-								MapHyouji();
-							}
-							if (HenB==0) {//攻撃
-								ComHen = 2;
-								SenntakushiName[1] = "決定";
-								SenntakushiName[2] = "×";
-								SenntakushiName[3] = "×";
-								SenntakushiName[4] = "×";
-								SenntakushiName[5] = "キャンセル";
-								document.For02.B01.value=SenntakushiName[1];
-								document.For02.B02.value=SenntakushiName[2];
-								document.For02.B03.value=SenntakushiName[3];
-								document.For02.B04.value=SenntakushiName[4];
-								document.For02.B05.value=SenntakushiName[5];
-								document.For02.Tex00.defaultValue = "攻撃する部隊を選択してください";
-							}
-						}
-					}
-				}
-				if (HenA==2) {//強攻
-					if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]==0) { alert("隣接していない州へは攻撃できません"); }
-					if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]!=0) {
-						if (AreaData[SenntakuArea02][0]==[TurnJinnei]) { alert("その州には対象となる部隊が存在しません"); }
-						if (AreaData[SenntakuArea02][0]!=[TurnJinnei]) {
-							if (AreaData[SenntakuArea02][3]==999) { alert("その州には対象となる部隊が存在しません"); }
-							if (AreaData[SenntakuArea02][3]!=999) {
-								HouiHanntei();
-								if (HokyuKyori[TurnJinnei][Division[TurnJinnei][SenntakuShidann][4]]==0) { alert("補給外の州からは強攻ができません"); }
-								if (HokyuKyori[TurnJinnei][Division[TurnJinnei][SenntakuShidann][4]]!=0) {
-									ComHen = 4;
-									SenntakushiName[1] = "決定";
+								if (HenB==0) {//攻撃
+									ComHen = 2;
+									SenntakushiName[1] = "１：決定";
 									SenntakushiName[2] = "×";
 									SenntakushiName[3] = "×";
 									SenntakushiName[4] = "×";
@@ -1069,26 +1117,27 @@ function Sen(HenA) {
 									document.For02.B03.value=SenntakushiName[3];
 									document.For02.B04.value=SenntakushiName[4];
 									document.For02.B05.value=SenntakushiName[5];
-									document.For02.Tex00.defaultValue = "強攻攻撃する部隊を選択してください";
+									document.For02.Tex00.defaultValue = "攻撃する部隊を選択してください(Q・Wキー)";
 								}
 							}
 						}
 					}
 				}
-				if (HenA==3) {//砲撃
-					if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]==0) { alert("隣接していない州へは砲撃できません"); }
-					if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]!=0) {
-						if (AreaData[SenntakuArea02][0]!=TekiTurnJinnei) { alert("その州には対象となる部隊が存在しません"); }
-						if (AreaData[SenntakuArea02][0]==TekiTurnJinnei) {
-							if (AreaData[SenntakuArea02][3]==999) { alert("その州には対象となる部隊が存在しません"); }
-							if (AreaData[SenntakuArea02][3]!=999) {
-								if (Division[TurnJinnei][SenntakuShidann][6]==0) { alert("その部隊は砲兵を伴いません"); }
-								if (Division[TurnJinnei][SenntakuShidann][6]!=0) {
-									if (Hokyuu[TurnJinnei]<Division[TurnJinnei][SenntakuShidann][6]) { alert("補給不足です"); }
-									if (Hokyuu[TurnJinnei]>=Division[TurnJinnei][SenntakuShidann][6]) {
-										Hokyuu[TurnJinnei] -= Division[TurnJinnei][SenntakuShidann][6];
-										ComHen = 3;
-										SenntakushiName[1] = "決定";
+				if (HenA==2) {//強攻
+					if (HokyuuSyouhizumi==0 && Hokyuu[TurnJinnei]<Division[TurnJinnei][CommandAtari[HenA]][5]) { alert("補給不足です"); }
+					if (HokyuuSyouhizumi!=0 || Hokyuu[TurnJinnei]>=Division[TurnJinnei][CommandAtari[HenA]][5]) {
+						if (HokyuuSyouhizumi==0) { Hokyuu[TurnJinnei] -= Division[TurnJinnei][CommandAtari[HenA]][5]; Hokyuu[TurnJinnei] = Math.round(Hokyuu[TurnJinnei]*10)/10; }
+						if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]==0) { alert("隣接していない州へは攻撃できません"); }
+						if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]!=0) {
+							if (AreaData[SenntakuArea02][0]==[TurnJinnei]) { alert("その州には対象となる部隊が存在しません"); }
+							if (AreaData[SenntakuArea02][0]!=[TurnJinnei]) {
+								if (AreaData[SenntakuArea02][3]==999) { alert("その州には対象となる部隊が存在しません"); }
+								if (AreaData[SenntakuArea02][3]!=999) {
+									HouiHanntei();
+									if (HokyuKyori[TurnJinnei][Division[TurnJinnei][SenntakuShidann][4]]==0) { alert("補給外の州からは強攻ができません"); }
+									if (HokyuKyori[TurnJinnei][Division[TurnJinnei][SenntakuShidann][4]]!=0) {
+										ComHen = 4;
+										SenntakushiName[1] = "１：決定";
 										SenntakushiName[2] = "×";
 										SenntakushiName[3] = "×";
 										SenntakushiName[4] = "×";
@@ -1098,7 +1147,41 @@ function Sen(HenA) {
 										document.For02.B03.value=SenntakushiName[3];
 										document.For02.B04.value=SenntakushiName[4];
 										document.For02.B05.value=SenntakushiName[5];
-										document.For02.Tex00.defaultValue = "砲撃する部隊を選択してください";
+										document.For02.Tex00.defaultValue = "強攻攻撃する部隊を選択してください(Q・Wキー)";
+									}
+								}
+							}
+						}
+					}
+				}
+				if (HenA==3) {//砲撃
+					if (HokyuuSyouhizumi==0 && Hokyuu[TurnJinnei]<Division[TurnJinnei][CommandAtari[HenA]][5]) { alert("補給不足です"); }
+					if (HokyuuSyouhizumi!=0 || Hokyuu[TurnJinnei]>=Division[TurnJinnei][CommandAtari[HenA]][5]) {
+						if (HokyuuSyouhizumi==0) { Hokyuu[TurnJinnei] -= Division[TurnJinnei][CommandAtari[HenA]][5]; Hokyuu[TurnJinnei] = Math.round(Hokyuu[TurnJinnei]*10)/10; }
+						if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]==0) { alert("隣接していない州へは砲撃できません"); }
+						if (AreaSetuzoku[Division[TurnJinnei][SenntakuShidann][4]][SenntakuArea02]!=0) {
+							if (AreaData[SenntakuArea02][0]!=TekiTurnJinnei) { alert("その州には対象となる部隊が存在しません"); }
+							if (AreaData[SenntakuArea02][0]==TekiTurnJinnei) {
+								if (AreaData[SenntakuArea02][3]==999) { alert("その州には対象となる部隊が存在しません"); }
+								if (AreaData[SenntakuArea02][3]!=999) {
+									if (Division[TurnJinnei][SenntakuShidann][6]==0) { alert("その部隊は砲兵を伴いません"); }
+									if (Division[TurnJinnei][SenntakuShidann][6]!=0) {
+										if (Hokyuu[TurnJinnei]<Division[TurnJinnei][SenntakuShidann][6]) { alert("補給不足です"); }
+										if (Hokyuu[TurnJinnei]>=Division[TurnJinnei][SenntakuShidann][6]) {
+											Hokyuu[TurnJinnei] -= Division[TurnJinnei][SenntakuShidann][6];
+											ComHen = 3;
+											SenntakushiName[1] = "１：決定";
+											SenntakushiName[2] = "×";
+											SenntakushiName[3] = "×";
+											SenntakushiName[4] = "×";
+											SenntakushiName[5] = "キャンセル";
+											document.For02.B01.value=SenntakushiName[1];
+											document.For02.B02.value=SenntakushiName[2];
+											document.For02.B03.value=SenntakushiName[3];
+											document.For02.B04.value=SenntakushiName[4];
+											document.For02.B05.value=SenntakushiName[5];
+											document.For02.Tex00.defaultValue = "砲撃する部隊を選択してください(Q・Wキー)";
+										}
 									}
 								}
 							}
@@ -1106,44 +1189,30 @@ function Sen(HenA) {
 					}
 				}
 				if (HenA==4) {//補充
-					if (Division[TurnJinnei][SenntakuShidann][2]==Division[TurnJinnei][SenntakuShidann][3]) { alert("最大値以上の戦力補充はできません"); }
-					if (Division[TurnJinnei][SenntakuShidann][2]<Division[TurnJinnei][SenntakuShidann][3]) {
-						if (Hokyuu[TurnJinnei]<HojuMisc) { alert("補給不足です"); }
-						if (Hokyuu[TurnJinnei]>=HojuMisc) {
-							HouiHanntei()
-							if (HokyuKyori[TurnJinnei][Division[TurnJinnei][SenntakuShidann][4]]==0) { alert("補給外の州に駐留する部隊には補充ができません"); }
-							if (HokyuKyori[TurnJinnei][Division[TurnJinnei][SenntakuShidann][4]]!=0) {
-								Hokyuu[TurnJinnei] -= HojuMisc;
-								Division[TurnJinnei][SenntakuShidann][2] += HojuEffMisc;
-								Division[TurnJinnei][SenntakuShidann][2] = Math.round(Division[TurnJinnei][SenntakuShidann][2]);
-								if (Division[TurnJinnei][SenntakuShidann][2]>Division[TurnJinnei][SenntakuShidann][3]) {//v1.01追加
-									Division[TurnJinnei][SenntakuShidann][2]=Division[TurnJinnei][SenntakuShidann][3];
-								}//v1.01追加ここまで
-								TurnEndHen = 1;
+					if (HokyuuSyouhizumi==0 && Hokyuu[TurnJinnei]<Division[TurnJinnei][CommandAtari[HenA]][5]) { alert("補給不足です"); }
+					if (HokyuuSyouhizumi!=0 || Hokyuu[TurnJinnei]>=Division[TurnJinnei][CommandAtari[HenA]][5]) {
+						if (HokyuuSyouhizumi==0) { Hokyuu[TurnJinnei] -= Division[TurnJinnei][CommandAtari[HenA]][5]; Hokyuu[TurnJinnei] = Math.round(Hokyuu[TurnJinnei]*10)/10; }
+						if (Division[TurnJinnei][SenntakuShidann][2]==Division[TurnJinnei][SenntakuShidann][3]) { alert("最大値以上の戦力補充はできません"); }
+						if (Division[TurnJinnei][SenntakuShidann][2]<Division[TurnJinnei][SenntakuShidann][3]) {
+							if (Hokyuu[TurnJinnei]<HojuMisc) { alert("補給不足です"); }
+							if (Hokyuu[TurnJinnei]>=HojuMisc) {
+								HouiHanntei()
+								if (HokyuKyori[TurnJinnei][Division[TurnJinnei][SenntakuShidann][4]]==0) { alert("補給外の州に駐留する部隊には補充ができません"); }
+								if (HokyuKyori[TurnJinnei][Division[TurnJinnei][SenntakuShidann][4]]!=0) {
+									Hokyuu[TurnJinnei] -= HojuMisc;
+									Division[TurnJinnei][SenntakuShidann][2] += HojuEffMisc;
+									Division[TurnJinnei][SenntakuShidann][2] = Math.round(Division[TurnJinnei][SenntakuShidann][2]);
+									if (Division[TurnJinnei][SenntakuShidann][2]>Division[TurnJinnei][SenntakuShidann][3]) {//v1.01追加
+										Division[TurnJinnei][SenntakuShidann][2]=Division[TurnJinnei][SenntakuShidann][3];
+									}//v1.01追加ここまで
+									TurnEndHen = 1;
+								}
 							}
 						}
 					}
 				}
-				if (HenA==5) {//キャンセル
-					if (KidouNum!=Division[TurnJinnei][SenntakuShidann][7]) { TurnEndHen = 1; }
-					if (KidouNum==Division[TurnJinnei][SenntakuShidann][7]) {
-						Hokyuu[TurnJinnei] += Division[TurnJinnei][SenntakuShidann][5];
-						ComHen = 0;
-						SenntakuShidann = 999;
-						Botann(1);
-						SenntakushiName = new Array();
-						for (HenA=1;HenA<=4;HenA++) {
-							SenntakushiName[HenA] = Division[TurnJinnei][CommandAtari[HenA]][0]+"(補給"+Division[TurnJinnei][CommandAtari[HenA]][5]+")";
-						}
-						document.For02.B01.value=SenntakushiName[1];
-						document.For02.B02.value=SenntakushiName[2];
-						document.For02.B03.value=SenntakushiName[3];
-						document.For02.B04.value=SenntakushiName[4];
-						SenntakushiName[5] = "待機命令";
-						document.For02.B05.value=SenntakushiName[5];
-						document.For02.Tex00.defaultValue = "補給点"+Hokyuu[TurnJinnei]+"+"+HokyuuPlus[TurnJinnei];
-						MapHyouji();
-					}
+				if (HenA==5) {//待機
+					TurnEndHen = 1;
 				}
 			break;
 			//２攻撃選択
@@ -1154,6 +1223,7 @@ function Sen(HenA) {
 						alert("部隊が存在しません");
 					}
 					if (AreaData[SenntakuArea02][HenB]!=999) {
+						HokyuuSyouhizumi++;
 						//ダメージ処理
 						HouiHanntei();
 						HenC = 0;
@@ -1209,12 +1279,10 @@ function Sen(HenA) {
 						if (Division[TekiTurnJinnei][AreaData[SenntakuArea02][HenB]][2]>0) {
 							ComHen = 5;
 							SenntakuShidann = AreaData[SenntakuArea02][HenB];
-							Botann(1);
 							SenntakuArea01 = Division[TekiTurnJinnei][SenntakuShidann][4];
 							Area(SenntakuArea01);
-							Botann(2);
-							SenntakushiName[1] = "退却";
-							SenntakushiName[2] = "死守";
+							SenntakushiName[1] = "１：退却";
+							SenntakushiName[2] = "２：死守";
 							SenntakushiName[3] = "×";
 							SenntakushiName[4] = "×";
 							SenntakushiName[5] = "×";
@@ -1233,18 +1301,20 @@ function Sen(HenA) {
 					}
 				}
 				if (HenA==5) {//キャンセル
+					if (HokyuuSyouhizumi==0) { Hokyuu[TurnJinnei] += Division[TurnJinnei][CommandAtari[1]][5]; }
+					Hokyuu[TurnJinnei] = Math.round(Hokyuu[TurnJinnei]*10)/10;
 					ComHen = 1;
-					SenntakushiName[1] = "行軍(攻撃)";
-					SenntakushiName[2] = "強攻";
-					SenntakushiName[3] = "砲撃";
-					SenntakushiName[4] = "補充";
-					SenntakushiName[5] = "キャンセル";
+					SenntakushiName[1] = "１：行軍(攻撃)";
+					SenntakushiName[2] = "２：強攻";
+					SenntakushiName[3] = "３：砲撃";
+					SenntakushiName[4] = "４：補充";
+					SenntakushiName[5] = "Ｅ：待機";
 					document.For02.B01.value=SenntakushiName[1];
 					document.For02.B02.value=SenntakushiName[2];
 					document.For02.B03.value=SenntakushiName[3];
 					document.For02.B04.value=SenntakushiName[4];
 					document.For02.B05.value=SenntakushiName[5];
-					document.For02.Tex00.defaultValue = Division[TurnJinnei][SenntakuShidann][0]+"への命令";
+					document.For02.Tex00.defaultValue = "補給点"+Hokyuu[TurnJinnei]+"+"+HokyuuPlus[TurnJinnei];
 				}
 			break;
 			//３砲撃選択
@@ -1255,6 +1325,7 @@ function Sen(HenA) {
 						alert("部隊が存在しません");
 					}
 					if (AreaData[SenntakuArea02][HenB]!=999) {
+						HokyuuSyouhizumi++;
 						Division[TekiTurnJinnei][AreaData[SenntakuArea02][HenB]][2] -= 2;
 						if (Division[TekiTurnJinnei][AreaData[SenntakuArea02][HenB]][2]<=0) {
 							Division[TekiTurnJinnei][AreaData[SenntakuArea02][HenB]][1] = 0;
@@ -1266,19 +1337,21 @@ function Sen(HenA) {
 					}
 				}
 				if (HenA==5) {//キャンセル
+					if (HokyuuSyouhizumi==0) { Hokyuu[TurnJinnei] += Division[TurnJinnei][CommandAtari[1]][5]; }
 					Hokyuu[TurnJinnei] += Division[TurnJinnei][SenntakuShidann][6];
+					Hokyuu[TurnJinnei] = Math.round(Hokyuu[TurnJinnei]*10)/10;
 					ComHen = 1;
-					SenntakushiName[1] = "行軍(攻撃)";
-					SenntakushiName[2] = "強攻";
-					SenntakushiName[3] = "砲撃";
-					SenntakushiName[4] = "補充";
-					SenntakushiName[5] = "キャンセル";
+					SenntakushiName[1] = "１：行軍(攻撃)";
+					SenntakushiName[2] = "２：強攻";
+					SenntakushiName[3] = "３：砲撃";
+					SenntakushiName[4] = "４：補充";
+					SenntakushiName[5] = "Ｅ：待機";
 					document.For02.B01.value=SenntakushiName[1];
 					document.For02.B02.value=SenntakushiName[2];
 					document.For02.B03.value=SenntakushiName[3];
 					document.For02.B04.value=SenntakushiName[4];
 					document.For02.B05.value=SenntakushiName[5];
-					document.For02.Tex00.defaultValue = Division[TurnJinnei][SenntakuShidann][0]+"への命令";
+					document.For02.Tex00.defaultValue = "補給点"+Hokyuu[TurnJinnei]+"+"+HokyuuPlus[TurnJinnei];
 				}
 			break;
 			//４強攻選択
@@ -1289,6 +1362,7 @@ function Sen(HenA) {
 						alert("部隊が存在しません");
 					}
 					if (AreaData[SenntakuArea02][HenB]!=999) {
+						HokyuuSyouhizumi++;
 						//ダメージ処理
 						HouiHanntei();
 						HenC = 0;
@@ -1362,12 +1436,10 @@ function Sen(HenA) {
 						if (HenC==1 && Division[TekiTurnJinnei][AreaData[SenntakuArea02][HenB]][2]>0) {
 							ComHen = 5;
 							SenntakuShidann = AreaData[SenntakuArea02][HenB];
-							Botann(1);
 							SenntakuArea01 = Division[TekiTurnJinnei][SenntakuShidann][4];
 							Area(SenntakuArea01);
-							Botann(2);
-							SenntakushiName[1] = "退却";
-							SenntakushiName[2] = "死守";
+							SenntakushiName[1] = "１：退却";
+							SenntakushiName[2] = "２：死守";
 							SenntakushiName[3] = "×";
 							SenntakushiName[4] = "×";
 							SenntakushiName[5] = "×";
@@ -1386,18 +1458,20 @@ function Sen(HenA) {
 					}
 				}
 				if (HenA==5) {//キャンセル
+					if (HokyuuSyouhizumi==0) { Hokyuu[TurnJinnei] += Division[TurnJinnei][CommandAtari[HenA]][5]; }
+					Hokyuu[TurnJinnei] = Math.round(Hokyuu[TurnJinnei]*10)/10;
 					ComHen = 1;
-					SenntakushiName[1] = "行軍(攻撃)";
-					SenntakushiName[2] = "強攻";
-					SenntakushiName[3] = "砲撃";
-					SenntakushiName[4] = "補充";
-					SenntakushiName[5] = "キャンセル";
+					SenntakushiName[1] = "１：行軍(攻撃)";
+					SenntakushiName[2] = "２：強攻";
+					SenntakushiName[3] = "３：砲撃";
+					SenntakushiName[4] = "４：補充";
+					SenntakushiName[5] = "Ｅ：待機";
 					document.For02.B01.value=SenntakushiName[1];
 					document.For02.B02.value=SenntakushiName[2];
 					document.For02.B03.value=SenntakushiName[3];
 					document.For02.B04.value=SenntakushiName[4];
 					document.For02.B05.value=SenntakushiName[5];
-					document.For02.Tex00.defaultValue = Division[TurnJinnei][SenntakuShidann][0]+"への命令";
+					document.For02.Tex00.defaultValue = "補給点"+Hokyuu[TurnJinnei]+"+"+HokyuuPlus[TurnJinnei];
 				}
 			break;
 			//５退却選択
@@ -1460,9 +1534,6 @@ function Taikyaku() {
 
 //補給首都
 KonnkyotiNum = 1;
-KonnkyotiArea = new Array();
-KonnkyotiArea[0] = new Array(3,42);
-KonnkyotiArea[1] = new Array(17,22);
 
 //補給距離
 HokyuKyori = new Array();
@@ -1586,12 +1657,12 @@ function TurnEnd() {
 		SenntakuShidann = 999;
 		HokyuuKeisann();
 		SennryokuKeisann();
-		ComHen = 0;
+		HokyuuSyouhizumi = 0;
+		ComHen = 1;
 		TurnEndHen = 0;
+		CommandSelect();
 		MapShidannData();
 		MapHyouji();
-		CommandSelect();
-		Botann(1);
 	}
 	if (Game==1) {
 		SenntakushiName[1] = "１";
@@ -1628,7 +1699,7 @@ function SennryokuKeisann() {
 		HenB += Division[0][HenA][2];
 		HenC += Division[1][HenA][2];
 	}
-	document.For03.Tex00.defaultValue = "北軍"+HenB+"vs南軍"+HenC;
+	document.For03.Tex00.defaultValue = Aname+HenB+"vs"+Bname+HenC;
 }
 
 HokyuuKeisann()
@@ -1651,10 +1722,6 @@ document.addEventListener('keypress', keypress_ivent);
 function keypress_ivent(e) {
 	if(e.code === 'KeyQ'){
 		if (ComHen==0) {
-			switch (AreaSel) {
-				case 1: Botann(2); break;
-				case 2: Botann(1); break;
-			}
 		}
 		if (ComHen==2 || ComHen==3 || ComHen==4) {
 			MigiMenu(-1);
